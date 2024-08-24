@@ -13,18 +13,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Types", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Application", "Src\Pinky.MyMoney.Application\Pinky.MyMoney.Api.Application.csproj", "{7016C284-8159-4474-87B9-0FDBE42EC3C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api", "Src\Pinky.MyMoney.MyMoney\Pinky.MyMoney.Api.csproj", "{33D35E8A-FE8A-4EF1-9FD1-68F09AE7BBA9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General", "General", "{6463E1FC-7C7B-493A-87BE-CF6B2DEA63C3}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Services", "Src\Pinky.MyMoney.Services\Pinky.MyMoney.Services.csproj", "{687780A2-D46A-425F-A9A1-90C06D456712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Services", "Src\Pinky.MyMoney.Services\Pinky.MyMoney.Api.Services.csproj", "{687780A2-D46A-425F-A9A1-90C06D456712}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Repositories", "Src\Pinky.MyMoney.Repositories\Pinky.MyMoney.Repositories.csproj", "{3AF2D865-4529-4098-9FD5-DFD0B12516F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Repositories", "Src\Pinky.MyMoney.Repositories\Pinky.MyMoney.Api.Repositories.csproj", "{3AF2D865-4529-4098-9FD5-DFD0B12516F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.DataModel", "Src\Pinky.MyMoney.DataModel\Pinky.MyMoney.DataModel.csproj", "{877E1896-5FAB-41A9-BDEF-955329439B48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Model", "Src\Pinky.MyMoney.DataModel\Pinky.MyMoney.Api.Model.csproj", "{877E1896-5FAB-41A9-BDEF-955329439B48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api", "Src\Pinky.MyMoney.Api\Pinky.MyMoney.Api.csproj", "{2A8B4A88-5ACD-44E8-B087-AB117415FA16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Models.Options", "Src\Pinky.MyMoney.Api.Models.Options\Pinky.MyMoney.Api.Models.Options.csproj", "{50CD918E-1C20-49F5-85FA-EDFD6A5E4B57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pinky.MyMoney.Api.Configuration", "Src\Pinky.MyMoney.Api.Configuration\Pinky.MyMoney.Api.Configuration.csproj", "{A58620FB-4E5C-4A73-B14B-B2AEA06A3F13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +48,6 @@ Global
 		{7016C284-8159-4474-87B9-0FDBE42EC3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7016C284-8159-4474-87B9-0FDBE42EC3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7016C284-8159-4474-87B9-0FDBE42EC3C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33D35E8A-FE8A-4EF1-9FD1-68F09AE7BBA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33D35E8A-FE8A-4EF1-9FD1-68F09AE7BBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33D35E8A-FE8A-4EF1-9FD1-68F09AE7BBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33D35E8A-FE8A-4EF1-9FD1-68F09AE7BBA9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{687780A2-D46A-425F-A9A1-90C06D456712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{687780A2-D46A-425F-A9A1-90C06D456712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{687780A2-D46A-425F-A9A1-90C06D456712}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,6 +60,18 @@ Global
 		{877E1896-5FAB-41A9-BDEF-955329439B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877E1896-5FAB-41A9-BDEF-955329439B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877E1896-5FAB-41A9-BDEF-955329439B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8B4A88-5ACD-44E8-B087-AB117415FA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8B4A88-5ACD-44E8-B087-AB117415FA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8B4A88-5ACD-44E8-B087-AB117415FA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8B4A88-5ACD-44E8-B087-AB117415FA16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CD918E-1C20-49F5-85FA-EDFD6A5E4B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CD918E-1C20-49F5-85FA-EDFD6A5E4B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CD918E-1C20-49F5-85FA-EDFD6A5E4B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CD918E-1C20-49F5-85FA-EDFD6A5E4B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A58620FB-4E5C-4A73-B14B-B2AEA06A3F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58620FB-4E5C-4A73-B14B-B2AEA06A3F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58620FB-4E5C-4A73-B14B-B2AEA06A3F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58620FB-4E5C-4A73-B14B-B2AEA06A3F13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,10 +80,12 @@ Global
 		{79F7C622-7D80-4EFE-9D43-9A97DF6867D5} = {D293958E-9BD1-46FE-991B-0A844028F84C}
 		{569A5C71-34D2-470D-9159-7A9DB51730BF} = {D293958E-9BD1-46FE-991B-0A844028F84C}
 		{7016C284-8159-4474-87B9-0FDBE42EC3C8} = {D293958E-9BD1-46FE-991B-0A844028F84C}
-		{33D35E8A-FE8A-4EF1-9FD1-68F09AE7BBA9} = {D293958E-9BD1-46FE-991B-0A844028F84C}
 		{687780A2-D46A-425F-A9A1-90C06D456712} = {D293958E-9BD1-46FE-991B-0A844028F84C}
 		{3AF2D865-4529-4098-9FD5-DFD0B12516F1} = {D293958E-9BD1-46FE-991B-0A844028F84C}
 		{877E1896-5FAB-41A9-BDEF-955329439B48} = {D293958E-9BD1-46FE-991B-0A844028F84C}
+		{2A8B4A88-5ACD-44E8-B087-AB117415FA16} = {D293958E-9BD1-46FE-991B-0A844028F84C}
+		{50CD918E-1C20-49F5-85FA-EDFD6A5E4B57} = {D293958E-9BD1-46FE-991B-0A844028F84C}
+		{A58620FB-4E5C-4A73-B14B-B2AEA06A3F13} = {D293958E-9BD1-46FE-991B-0A844028F84C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C14C8A85-4906-4CCA-B009-962C7F63BCA8}
